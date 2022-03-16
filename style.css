@@ -84,7 +84,7 @@ nav a {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-ul {
+nav ul {
   display: flex;
   justify-content: space-between;
 }
@@ -308,6 +308,33 @@ header {
   text-align: center;
 }
 
+/*FOOTER*/
+footer {
+  background-color: var(--color-darkest);
+  padding-bottom: 2rem;
+}
+
+footer h2 {
+  color: var(--color-light);
+  margin-bottom: 0;
+}
+
+footer h3 {
+  margin-top: 2rem;
+  color: var(--color-light);
+}
+
+footer a {
+  color: var(--color-lighter);
+  font-family: var(--font-paragraph);
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+footer li {
+  text-align: center;
+}
+
 @media (min-width: 810px) {
   /*MENU*/
   nav {
@@ -362,6 +389,18 @@ header {
   }
   .form_button {
     text-align: center;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+  }
+  #footer_links {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer h2 {
+    padding-top: 1rem;
   }
 }
 

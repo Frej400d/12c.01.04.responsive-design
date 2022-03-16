@@ -7,8 +7,8 @@
 :root {
   --color-darkest: #180a19;
   --color-darker: #3d0c41;
-  --color-dark: #873e67;
   --color-light: #fdf1ff;
+  --color-lights: #e9e7ff;
   --color-lighter: #fff;
   --color-cta: #f20c70;
   /* you could add an accent color for CTAs and anchor tags ;-) */
@@ -184,7 +184,7 @@ header {
 
 .highlight {
   margin-top: 5rem;
-  background-color: var(--color-darker);
+  background-color: var(--color-darkest);
   color: var(--color-lighter);
   padding-bottom: 2rem;
 }
@@ -220,6 +220,61 @@ header {
   padding: 1rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
+}
+
+/*MEET*/
+
+#team {
+  background-color: var();
+}
+
+#first_article {
+  background-color: var(--color-light);
+  display: flex;
+  min-height: 50vh;
+  padding: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#second_article {
+  background-color: var(--color-lights);
+  display: flex;
+  min-height: 50vh;
+  flex-direction: row-reverse;
+  padding: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.team_graphics_container img {
+  max-width: 20rem;
+}
+
+#team li {
+  font-family: var(--font-paragraph);
+  line-height: 2rem;
+}
+
+#team ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+#team h3 {
+  font-size: 2rem;
+}
+
+#team a {
+  font-family: var(--font-paragraph);
+  color: var(--color-cta);
 }
 
 @media (min-width: 810px) {
@@ -281,5 +336,18 @@ header {
   }
   .product_text {
     margin-top: 2rem;
+  }
+
+  #first_article {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  #team h3 {
+    text-align: left;
+  }
+
+  #second_article {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 }

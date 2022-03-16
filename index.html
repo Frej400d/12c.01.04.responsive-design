@@ -8,22 +8,33 @@
     <!--Template adapted from https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/ -->
     <!-- Inspired by https://textluke.com/ & https://carrot.tech/ for educational purpose-->
     <!-- Lorem Ipsum from https://loremizr.monkeymatt.com/ -->
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
       <!-- Menu component layout -->
-      <a href="index.html">Logo</a>
-      <ul>
-        <li><a href="#advantages">Advantages</a></li>
-        <li><a href="#product">Product</a></li>
-        <li><a href="#team">Team</a></li>
-      </ul>
+      <a class="logo" href="index.html">Logo</a>
+      <div class="menu_items">
+        <ul>
+          <li><a href="#advantages">Advantages</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+      </div>
       <button type="button">Learn More &#x2794;</button>
     </nav>
     <header>
       <!-- Header layout -->
       <!-- Add image-->
+
       <div class="header_text">
         <h1>Corrupti e lorem ut fecerunt contrarii.</h1>
         <p>
@@ -31,10 +42,14 @@
           oppressus eu oportunitatis error est quae interpretes corporis - v tot
           ullo s Verius.
         </p>
-        <button type="button">Request Demo &#x2794;</button>
+        <div id="header_button">
+          <button type="button">Request Demo &#x2794;</button>
+        </div>
       </div>
       <!-- Add image-->
-      <div class="header_graphics"></div>
+      <div class="header_graphics">
+        <img id="header_graphics" src="img/header_graphics.png" alt="" />
+      </div>
     </header>
     <section id="advantages">
       <h2>Advantages</h2>

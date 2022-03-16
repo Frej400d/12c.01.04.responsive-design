@@ -8,7 +8,7 @@
   --color-darkest: #180a19;
   --color-darker: #3d0c41;
   --color-dark: #873e67;
-  --color-light: #f1dfe2;
+  --color-light: #fdf1ff;
   --color-lighter: #fff;
   --color-cta: #f20c70;
   /* you could add an accent color for CTAs and anchor tags ;-) */
@@ -27,6 +27,8 @@ h1 {
 h2 {
   font-family: var(--font-display);
   font-size: 2rem;
+  text-align: center;
+  padding-top: 3rem;
   margin-bottom: 1rem;
   color: var(--color-darker);
 }
@@ -114,12 +116,48 @@ header {
 }
 
 #header_graphics {
-  max-width: 35rem;
+  max-width: 25rem;
 }
 
 #header_button {
   display: flex;
   justify-content: center;
+}
+
+/*CARDS*/
+
+#advantages {
+  background-color: var(--color-light);
+  padding-bottom: 2rem;
+}
+
+.advantages_cards_container {
+  display: grid;
+  margin-top: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  justify-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.advantages_card {
+  display: flex;
+
+  flex-direction: column;
+  background-color: var(--color-lighter);
+  box-shadow: 10px 10px 5px rgb(207, 187, 207);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.advantages_card p {
+  font-size: 1rem;
+}
+
+.card_img {
+  border-radius: 0.5rem;
 }
 
 @media (min-width: 810px) {
@@ -144,6 +182,10 @@ header {
   h1 {
     font-size: 5rem;
     padding-top: 3rem;
+  }
+
+  h2 {
+    font-size: 3rem;
   }
 }
 

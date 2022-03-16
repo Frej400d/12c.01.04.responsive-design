@@ -180,6 +180,48 @@ header {
   text-align: center;
 }
 
+/*HIGHLIGHT*/
+
+.highlight {
+  margin-top: 5rem;
+  background-color: var(--color-darker);
+  color: var(--color-lighter);
+  padding-bottom: 2rem;
+}
+
+.highlight h2 {
+  color: var(--color-lighter);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0;
+}
+
+.highlight p {
+  text-align: center;
+}
+
+.highlight_small_cards {
+  margin-top: 2rem;
+}
+
+.highlight_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.highlight_button button {
+  color: var(--color-lighter);
+  border-radius: 0.2rem;
+}
+
+.highlight_card {
+  background-color: var(--color-light);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 810px) {
   /*MENU*/
   nav {
@@ -210,6 +252,11 @@ header {
 
   .product_graphics_container {
     margin: 2rem 5rem 2rem 5rem;
+  }
+
+  .highlight_small_cards {
+    display: flex;
+    justify-content: space-around;
   }
 }
 

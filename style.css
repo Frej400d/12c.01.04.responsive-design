@@ -441,6 +441,11 @@ footer li {
   }
 
   #contact_form {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .highlight h2 {
     margin-left: 5rem;
     margin-right: 5rem;
   }
